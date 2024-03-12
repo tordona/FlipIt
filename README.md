@@ -1,12 +1,14 @@
 # FlipIt
-Forked from https://github.com/phaselden/FlipIt.
+Forked from https://github.com/doyou/FlipIt.
 
 Flip Clock Screensaver. Inspired by [Fliqlo](http://fliqlo.com/). Fliqlo on Windows stopped working with a recent (Dec 2015?) Flash update which prompted this project. This project does NOT use Flash.
 
 Improved and fixed some issues:
-* fix the "_showSeconds" option's function and make it configurable.
-* World time cities OK and the hour aligned in WorldTimesScreen.
-* Enable high DPI autoresizing.
+* Fix redraw when Seconds setting is off.
+    *  Default Show Seconds value to false
+    *  Switch to use settings value over hard coded value
+* Added ARM64 Build
+
 
 ![Screenshot](Screenshot.png)
 
@@ -14,18 +16,17 @@ Improved and fixed some issues:
 
 ## Requirements
 
-* Microsoft Windows
+* Microsoft Windows ARM64
 * .NET Framework 4.7.2
 
 ## Installation
 
-To install without building with Visual Studio, copy the .scr file on the [Releases](https://github.com/phaselden/FlipIt/releases) page to:
-    * C:\Windows\SysWOW64 on 64-bit Windows.
-    * C:\Windows\System32 on 32-bit Windows
+To install without building with Visual Studio, copy the .scr file on the [Releases](https://github.com/tordona/FlipIt/releases) page to:
+    * C:\Windows\System32 on 64-bit ARM (ARM64) Windows.
 
 ## Building with Visual Studio
 
-Run in Release mode and Run as Administrator to have the build event copy the screensaver to the Windows SysWOW64 or System32 folder. Set the Command line arguments to `/s` to have the screensaver display full screen on F5/Start.
+Run in Release mode and Run as Administrator to have the build event copy the screensaver to the Windows System32 folder. Set the Command line arguments to `/s` to have the screensaver display full screen on F5/Start.
 
 ## Acknowledgements
 

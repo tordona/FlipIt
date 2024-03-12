@@ -28,8 +28,6 @@ namespace ScreenSaver
         private readonly int _startingX;
         private readonly int _startingY;
 
-        private const bool DrawGuideLines = false;
-
 
         public CurrentTimeScreen(Form form, bool display24HourTime, bool isPreviewMode, int scalePercent,bool showSeconds)
         {
@@ -123,11 +121,6 @@ namespace ScreenSaver
             var yOffset = rect.Height.Percent(4);
             
             var textRect = new Rectangle(rect.Left - diff + xOffset, rect.Y + yOffset, rect.Width + diff * 2, rect.Height);
-
-            if (DrawGuideLines)
-            {
-                Gfx.DrawRectangle(Pens.Red, textRect);
-            }
             
             // Draw the text
             var stringFormat = new StringFormat

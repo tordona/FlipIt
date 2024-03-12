@@ -37,7 +37,6 @@ namespace ScreenSaver
 		// automatically occurs when the form is first shown
 		private Point _mouseLocation;
 		private readonly bool _isPreviewMode;
-		private readonly bool _showSeconds = true;
 		private int _lastMinute = -1;
 
         public MainForm()
@@ -106,7 +105,7 @@ namespace ScreenSaver
 				_lastMinute = minute;
 				PaintTime();
 			}
-			if (_showSeconds)
+			if (_settings.ShowSeconds)
 			{
 				PaintTime();
 			}

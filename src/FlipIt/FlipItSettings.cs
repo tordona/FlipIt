@@ -39,7 +39,7 @@ namespace ScreenSaver
                 settings.Display24HrTime = iniFile.GetBool("General", "Display24Hr", false);
                 settings.ShowDstIndicator = iniFile.GetBool("General", "ShowDstIndicator", true);
                 settings.Scale = iniFile.GetInt("General", "Scale", 70);
-                settings.ShowSeconds = iniFile.GetBool("General", "ShowSeconds", true);
+                settings.ShowSeconds = iniFile.GetBool("General", "ShowSeconds", false);
             }
             else
             {

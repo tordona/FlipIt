@@ -159,7 +159,7 @@ namespace ScreenSaver
         }
         private void githubLinkLabel_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Process.Start("https://github.com/phaselden/FlipIt");
+            Process.Start("https://github.com/tordona/FlipIt");
         }
 
         private void editLocationButton_Click(object sender, EventArgs e)

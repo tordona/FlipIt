@@ -213,7 +213,7 @@
             this.githubLinkLabel.Size = new System.Drawing.Size(294, 28);
             this.githubLinkLabel.TabIndex = 15;
             this.githubLinkLabel.TabStop = true;
-            this.githubLinkLabel.Text = "https://github.com/doyou/FlipIt";
+            this.githubLinkLabel.Text = "https://github.com/tordona/FlipIt";
             this.githubLinkLabel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.githubLinkLabel_LinkClicked);
             // 
             // scaleTrackBar
